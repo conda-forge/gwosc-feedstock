@@ -35,8 +35,8 @@ about:
   home: https://pypi.org/project/gwosc/
   dev_url: https://github.com/gwpy/gwosc
   doc_url: https://gwosc.readthedocs.io
-  license: GPL-3.0-or-later
-  license_family: GPL
+  license: MIT
+  license_family: MIT
   license_file: LICENSE
   summary: A python interface to the GW Open Science data archive
   description: |
