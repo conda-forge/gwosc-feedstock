@@ -7,7 +7,6 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
@@ -18,12 +17,11 @@ build:
 
 requirements:
   host:
+    - pip
     - python
     - setuptools
-    - pip
   run:
     - python
-    - six
 
 test:
   requires:
@@ -31,11 +29,13 @@ test:
   imports:
     - gwosc
   commands:
-    - python -m pytest --pyargs {{ name }}
+    - python -m pytest --pyargs {{ name }} -m "not remote"
 
 about:
-  home: https://gwosc.readthedocs.io
-  license: GPLv3
+  home: https://pypi.org/project/gwosc/
+  dev_url: https://github.com/gwpy/gwosc
+  doc_url: https://gwosc.readthedocs.io
+  license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
   summary: A python interface to the GW Open Science data archive
