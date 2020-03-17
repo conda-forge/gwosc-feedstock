@@ -1,6 +1,6 @@
 {% set name = "gwosc" %}
-{% set version = "0.4.3" %}
-{% set sha256 = "7fb8a7bc76c69329c9d8252c523a212bf6ecdfbe6bcdd940652efa60c6e85a8a" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "0780b303f5e4d4166c9b4ba33fa820067e00b2758b74805711be60e40335cfd1" %}
 
 package:
   name: {{ name }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
