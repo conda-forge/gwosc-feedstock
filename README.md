@@ -1,9 +1,9 @@
 About gwosc
 ===========
 
-Home: https://gwosc.readthedocs.io
+Home: https://pypi.org/project/gwosc/
 
-Package license: GPLv3
+Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
