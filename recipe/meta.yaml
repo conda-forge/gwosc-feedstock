@@ -1,6 +1,6 @@
 {% set name = "gwosc" %}
-{% set version = "0.5.1" %}
-{% set sha256 = "705b269706f1af07e9214ef35ccb602584f9fb5963d3920ca4bebfb3299dc536" %}
+{% set version = "0.5.2" %}
+{% set sha256 = "b78b27c17d524da8dc15d28277d9ab073e25eb5fc0866cbc31635f7a1d6fc88a" %}
 
 package:
   name: {{ name }}
