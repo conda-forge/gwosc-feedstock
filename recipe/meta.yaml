@@ -1,29 +1,27 @@
 {% set name = "gwosc" %}
-{% set version = "0.4.3" %}
-{% set sha256 = "7fb8a7bc76c69329c9d8252c523a212bf6ecdfbe6bcdd940652efa60c6e85a8a" %}
+{% set version = "0.5.1" %}
+{% set sha256 = "705b269706f1af07e9214ef35ccb602584f9fb5963d3920ca4bebfb3299dc536" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
+    - pip
     - python
     - setuptools
-    - pip
   run:
     - python
-    - six
 
 test:
   requires:
@@ -31,12 +29,14 @@ test:
   imports:
     - gwosc
   commands:
-    - python -m pytest --pyargs {{ name }}
+    - python -m pytest --pyargs {{ name }} -m "not remote"
 
 about:
-  home: https://gwosc.readthedocs.io
-  license: GPLv3
-  license_family: GPL
+  home: https://pypi.org/project/gwosc/
+  dev_url: https://github.com/gwpy/gwosc
+  doc_url: https://gwosc.readthedocs.io
+  license: MIT
+  license_family: MIT
   license_file: LICENSE
   summary: A python interface to the GW Open Science data archive
   description: |
