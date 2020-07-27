@@ -5,12 +5,12 @@ Home: https://pypi.org/project/gwosc/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A python interface to the GW Open Science data archive
 
 The `gwosc` package provides an interface to querying the open data
-releases hosted on <https://losc.ligo.org> from the LIGO and Virgo
+releases hosted on <https://gw-openscience.org> from the LIGO and Virgo
 gravitational-wave observatories.
 
 
