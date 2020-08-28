@@ -21,10 +21,12 @@ requirements:
     - setuptools
   run:
     - python >=3.5
+    - requests
 
 test:
   requires:
     - pytest
+    - requests-mock >=1.5.0
   imports:
     - gwosc
   commands:
