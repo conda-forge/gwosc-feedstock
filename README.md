@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gwosc-feedstock
 
 Summary: A python interface to the GW Open Science data archive
 
-Development: https://github.com/gwpy/gwosc
+Development: https://github.com/gwpy/gwosc.git
 
 Documentation: https://gwosc.readthedocs.io
 
