@@ -1,5 +1,5 @@
 {% set name = "gwosc" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d3bb6594dd19bde22b3fd8fb6e8bf8ed6b52cb87d4d2fddeb49a9b7d567d478e
+  sha256: 5328223410081731ba4ef6f3be9f13ac4b3b9a43397fa04c1f50ddeb59895816
 
 build:
   number: 0
