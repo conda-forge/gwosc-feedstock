@@ -153,4 +153,5 @@ Feedstock Maintainers
 =====================
 
 * [@duncanmmacleod](https://github.com/duncanmmacleod/)
+* [@martinberoiz](https://github.com/martinberoiz/)
 
