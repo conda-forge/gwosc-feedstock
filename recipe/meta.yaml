@@ -23,6 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - requests >=1.0.0
+    - tenacity
 
 test:
   requires:
