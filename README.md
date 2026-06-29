@@ -14,7 +14,7 @@ Development: https://github.com/gwpy/gwosc.git
 Documentation: https://gwosc.readthedocs.io
 
 The `gwosc` package provides an interface to querying the open data
-releases hosted on <https://gw-openscience.org> from the LIGO and Virgo
+releases hosted on <https://gwosc.org> from the LIGO and Virgo
 gravitational-wave observatories.
 
 
