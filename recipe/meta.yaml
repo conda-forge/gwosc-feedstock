@@ -10,7 +10,7 @@ source:
   sha256: e0687316b7c62b996ead78a59b9d1a78fbe5790bc72094cf75ed0858482d9b58
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -36,7 +36,10 @@ test:
     - python -m pip check
     - python -m pip show gwosc
     # run unit tests
-    - python -m pytest --pyargs {{ name }} -m "not remote"
+    - >
+      python -m pytest --pyargs {{ name }}
+      -m "not remote"
+      -o markers="remote: tests with network access"
 
 about:
   home: https://pypi.org/project/gwosc/
